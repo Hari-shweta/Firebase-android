@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
     tools:context=".Login">
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="194dp"
+        android:layout_width="197dp"
         android:layout_height="0dp"
         android:layout_marginTop="75dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="89dp"
         android:fontFamily="sans-serif-black"
         android:text="FEEDERATE"
         android:textSize="34sp"
@@ -25,9 +24,9 @@
         android:id="@+id/Lpassword"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="57dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="67dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -51,27 +50,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="206dp"
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="123dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="205dp"
-        android:fontFamily="sans-serif-black"
-        android:text="New here? Create Account"
-        android:textSize="16sp"
+        android:layout_marginBottom="38dp"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lpassword" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="97dp"
+        android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Login" />
-
-    <Button
-        android:id="@+id/Login"
-        android:layout_width="129dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:text="Login"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Lpassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
